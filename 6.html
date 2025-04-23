@@ -5,41 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-        width: 100%; 
-        min-width: 600px; 
-        max-width: 960px;		
-        background: rgb(255, 255, 244);
-        margin: 0 auto;
+      body{background-color:#cccc;}
+        .body {
+            justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+    .container {
+        display: flex;
+      }
+      .item {
+        font-size: 80px;
+        background: cyan;
+        width: 30%;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }	
-        .flexcontainer {
-            display: flex;
-            justify-content: space-between;
-        }
-        .flexitem {
-            width: 32%;
-            height: 300px;
-            background-color: cyan;
-        }
-        header {
-            width: 100%;
-            background-color: lightblue;
-            clear: both; 
-        }
-        footer {
-            width: 100%;
-            background-color: lightgreen;
-            clear: both; 
-        }
+      .flower{
+        width: 30%;
+        height: 500px;		
+        background: orange;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+      .flower img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
+      }
     </style>
 </head>
 <body>
-    <header><h1>首頁</h1></header>
-    <div class="flexcontainer">
-        <div class="flexitem"><h1>區塊1</h1></div>
-        <div class="flexitem"><h1>區塊2</h1></div>
-        <div class="flexitem"><h1>區塊3</h1></div>
-    </div>
-    <footer><h1>頁尾</h1></footer>
+    <div class="container">
+        <div class="item">圖片</div>
+        <div class="item">圖片</div>
+        <div class="item">圖片</div>
+      </div>
+    <div class="container">
+        <div class="flower"><img src="./640.jpeg"></div>
+        <div class="flower"><img src="./2.jfif"></div>
+        <div class="flower"><img src="./3.jfif"></div>
+    </div>	
 </body>
 </html>
